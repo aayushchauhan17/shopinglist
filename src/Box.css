@@ -1,0 +1,7 @@
+.deleteicn {
+  position: absolute;
+  margin-left: 275px;
+}
+.deleteicn:hover {
+  color: red;
+}

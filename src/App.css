@@ -1,38 +1,79 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap");
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+.shopList {
+  font-family: "Jost", sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.addItemBox {
+  min-width: 23vw;
+  background-color: lightgray;
+  border-radius: 15px;
+  padding: 15px 15px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin: 30px 0px;
+  /* min-width: 21vw; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputfiled {
+  color: black;
+  width: 290px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputfiled:hover {
+  color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+}
+.btn {
+  font-size: 20px;
+  padding: 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: lightblue;
 }
 
-.App-link {
-  color: #61dafb;
+.boxxGrid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  margin-left: -300px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.filterCss {
+  margin-left: 800px;
+}
+@media screen and (max-width: 1300px) {
+  .boxxGrid {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    margin-left: -200px;
   }
-  to {
-    transform: rotate(360deg);
+  .filterCss {
+    margin-left: 600px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .boxxGrid {
+    /* display: grid; */
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    margin-left: -30px;
+  }
+  .filterCss {
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .boxxGrid {
+    margin-left: -150px;
   }
 }

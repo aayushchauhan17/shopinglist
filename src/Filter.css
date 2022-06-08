@@ -1,0 +1,13 @@
+.crossButton {
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.crossButton:hover {
+  background-color: lightblue;
+}
+.addFilter {
+  background-color: whitesmoke;
+}
+.addFilter:hover {
+  background-color: lightblue;
+}
